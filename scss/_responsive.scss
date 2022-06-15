@@ -1,0 +1,244 @@
+@media (max-width:576px){
+    /*??? niye sagda bolsuq qalir ???*/
+}
+
+@media (min-width:576px) {
+
+    /* header responsive starts */
+    .header {
+
+        button {
+            margin-left: 0;
+        }
+    }
+
+    /* header responsive ends */
+
+    /* slider responsive starts */
+    .slider-container {
+
+        .slide {
+
+            .slide-content {
+                top: 40%;
+
+                h2 {
+                    width: 75%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    /* slider responsive ends */
+
+    /* clients responsive starts */
+    .client-experience {
+
+        .clients {
+
+            .client-info {
+                text-align: left;
+            }
+
+            .client-img {
+
+                margin-bottom: 0 !important;
+
+                img {
+                    margin-left: 100px;
+                }
+            }
+        }
+    }
+
+    /* clients responsive ends */
+
+    /* follow-us responsive starts */
+    .follow-us {
+
+        .follow-us-btn {
+
+            button.followBtn {
+                width: 50%;
+            }
+        }
+    }
+
+    /* clients responsive ends */
+}
+
+@media (min-width:768px) {
+
+    /* slider responsive starts */
+    .slider-container {
+
+        .slide {
+
+            .slide-content {
+                width: 30rem;
+                padding: 30px 10px;
+                top: 30%;
+                background-color: white;
+            }
+
+            img {
+                opacity: 1;
+            }
+        }
+    }
+
+    /* slider responsive ends */
+
+    /* follow-us responsive starts */
+    .follow-us {
+
+        position: relative;
+
+        .follow-us-title {
+            margin-bottom: 75px;
+        }
+
+        .follow-us-btn {
+
+            button.followBtn {
+                position: absolute;
+                width: 20rem;
+                top: 6.5rem;
+                left: calc(50% - 10rem);
+            }
+        }
+    }
+
+    /* follow-us responsive ends */
+}
+
+@media (min-width:992px) {
+
+    /* freshness responsive starts */
+    .freshness {
+        margin-bottom: -100px;
+    }
+
+    /* freshness responsive ends */
+
+    /* natural responsive starts */
+    .natural {
+        padding-top: 105px;
+    }
+
+    /* natural responsive ends */
+
+    /* client-experience responsive starts */
+    .client-experience {
+
+        .clients {
+
+            .client {
+
+                .client-img {
+
+                    img {
+                        margin-left: 15rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* client-experience responsive ends */
+
+    /* about-us responsive starts */
+    .about-us {
+
+        .about-us-content {
+
+            .content-description {
+
+                img.right-img {
+
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    /* about-us responsive ends */
+}
+
+@media (min-width:1200px) {
+
+    /* header responsive starts */
+    .header {
+
+        .header-center {
+
+            .menu-list {
+
+                li {
+                    padding: 0 15px;
+                    display: inline-block;
+
+                    a {
+                        font-size: 14px;
+                        font-family: $font-family-3;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+
+    /* header responsive ends */
+
+    /* slider responsive starts */
+    .slider-container {
+        height: 600px;
+
+        .slide {
+
+            .slide-content {
+
+                top: 35%;
+
+                h2 {
+                    font-size: 2.85rem;
+                }
+            }
+        }
+    }
+
+    /* slider responsive ends */
+
+    /* about-us responsive starts */
+    .about-us {
+
+        .about-us-content {
+
+            .content-description {
+
+                img.right-img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+    /* about-us responsive ends */
+
+    /* follow-us responsive starts */
+    .follow-us {
+
+        .follow-us-galery {
+
+            .galery-item {
+                width: 20% !important;
+            }
+        }
+    }
+
+    /* follow-us responsive ends */
+}

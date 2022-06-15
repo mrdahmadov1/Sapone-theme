@@ -1,0 +1,27 @@
+footer{
+    padding-bottom: 14px;
+    font-family: $font-family-3;
+    font-weight: 500;
+
+    .footer-links{
+        margin: 50px 0;
+
+        li{
+            display: inline;
+            padding: 5px;
+
+            a{
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+    }
+
+    .footer-copyright{
+
+        p{
+            font-size: 15px;
+            line-height: 1.4em;
+        }
+    }
+}

@@ -1,0 +1,465 @@
+// Freshness section starts //
+.freshness {
+    margin: 35px 0;
+    padding: 20px 0;
+    color: $text-color;
+
+    .freshness-content {
+        .content-title {
+            font-family: $font-family-2;
+            font-size: 24px;
+        }
+
+        .content-subtitle {
+            margin: 10px 0 30px;
+            line-height: 1.3em;
+            font-size: 34px;
+            font-family: $font-family-1;
+        }
+
+        .content-description {
+            font-size: 15px;
+            line-height: 1.75em;
+            letter-spacing: .4px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .freshness-images {
+
+        .freshness-image {
+            position: relative;
+
+            &:hover {
+                .freshness-image-hover {
+                    opacity: 1;
+                    visibility: visible;
+                    // display: flex !important;
+                }
+            }
+
+            .freshness-image-hover {
+                max-width: 355px;
+                z-index: 10;
+                opacity: 0;
+                visibility: hidden;
+                // display: none !important;
+                background-color: $main-color;
+                margin: 25px;
+                color: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 50%;
+                transition: all 1s ease;
+
+                .freshness-image-hover-subtitle {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+
+                .freshness-image-hover-title {
+                    font-size: 40px;
+                    font-family: $font-family-1;
+                    line-height: 1;
+                }
+
+                .freshness-image-hover-description {
+                    margin-bottom: 25px;
+                }
+
+                .freshness-image-hover-image {
+                    height: 55px;
+                    width: 100px;
+                }
+            }
+
+            .main-image {
+                width: 100%;
+                max-width: 400px;
+                min-height: 400px;
+                border-radius: 50%;
+                padding: 25px;
+
+            }
+        }
+    }
+}
+
+// Freshness section ends //
+
+// Natural section starts //
+.natural {
+
+    background-color: $bg-natural;
+    padding: 55px 0;
+
+    .natural-content {
+
+        .content-title {
+            font-family: $font-family-2;
+            font-size: 24px;
+        }
+
+        .content-subtitle {
+            margin: 10px 0 30px;
+            line-height: 1.3em;
+            font-size: 34px;
+            font-family: $font-family-1;
+        }
+    }
+
+    .natural-cards {
+
+        .card {
+            border: none;
+            background-color: transparent;
+
+            .card-content {
+
+                .content-subtitle {
+                    font-family: $font-family-3;
+                    font-weight: 500;
+                    font-size: 14px;
+                    margin-top: 15px;
+                }
+
+                .content-title {
+                    font-family: $font-family-1;
+                    font-size: 30px;
+                }
+
+                .content-stars {
+                    color: $text-color;
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+
+                .content-price {
+                    font-family: $font-family-1;
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+
+                .content-btn {
+
+                    .addBtn {
+                        border: 1px solid $text-color;
+                        background: transparent;
+                        padding: 10px 40px;
+                        font-family: $font-family-3;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// Natural section ends //
+
+// Benefit section starts //
+.benefit {
+
+    margin: 55px 0;
+
+    .benefit-content {
+
+        .content-title {
+            font-family: $font-family-2;
+            font-size: 24px;
+        }
+
+        .content-subtitle {
+            margin: 10px 0 30px;
+            line-height: 1.3em;
+            font-size: 30px;
+            font-family: $font-family-1;
+        }
+    }
+
+    .outcomes {
+
+        .outcome {
+
+            padding: 15px 30px 0;
+
+            .outcome-img {
+
+                img {
+                    // width: ;
+                }
+            }
+
+            .outcome-content {
+
+                .content-title {
+                    font-family: $font-family-1;
+                    font-size: 24px;
+                    margin: 15px;
+                }
+
+                .content-description {
+                    font-size: 16px;
+                    line-height: 1.8em;
+                    letter-spacing: .4px;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+// Benefit section ends //
+
+// About us section starts //
+.about-us {
+    background-color: #fbf6f6;
+    padding: 55px 0;
+
+    .about-us-title {
+
+        .title {
+            font-family: $font-family-2;
+            font-size: 24px;
+        }
+
+        .subtitle {
+            margin: 10px 0 30px;
+            line-height: 1.3em;
+            font-size: 32px;
+            font-family: $font-family-1;
+        }
+    }
+
+    .about-us-content {
+
+        .content-title {
+            font-family: $font-family-1;
+            font-size: 24px;
+        }
+
+        .content-description {
+
+            img {
+                width: 100%;
+
+                &.spike {
+                    width: 135px;
+                }
+
+                &.center{
+                    padding: 25px 50px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.8em;
+                letter-spacing: .4px;
+                margin: 2rem 0;
+            }
+        }
+    }
+}
+
+// About us section ends //
+
+// Client Experience section starts //
+.client-experience {
+    margin: 55px 0;
+
+    .client-title {
+
+        .title {
+            font-family: $font-family-2;
+            font-size: 24px;
+        }
+
+        .subtitle {
+            margin: 10px 0 30px;
+            line-height: 1.3em;
+            font-size: 30px;
+            font-family: $font-family-1;
+        }
+    }
+
+    .clients {
+
+        .client {
+
+            .client-img {
+
+                margin-bottom: 24px;
+
+                img {
+                    width: 35%;
+                    border-radius: 50%;
+                }
+            }
+
+            .client-name {
+                font-weight: bold;
+                font-size: 28px;
+                font-family: $font-family-1;
+                line-height: 2;
+            }
+
+            .client-comment {
+                margin-top: 24px;
+                font-size: 24px;
+                font-family: $font-family-1;
+            }
+        }
+    }
+}
+
+// Client Experience section ends //
+
+// News section starts //
+.news {
+    background: $bg-natural;
+    padding: 55px 0;
+
+    .news-title {
+
+        .title {
+            font-family: $font-family-2;
+            font-size: 24px;
+        }
+
+        .subtitle {
+            margin: 10px 0 30px;
+            line-height: 1.3em;
+            font-size: 30px;
+            font-family: $font-family-1;
+        }
+    }
+
+    .news-content {
+
+        .news-main {
+
+            .news-from-by {
+                font-family: $font-family-3;
+                font-weight: 500;
+                margin: 20px 0;
+            }
+
+            .news-heading {
+                font-family: $font-family-1;
+                font-size: 28px;
+                line-height: 1.4;
+            }
+
+            .news-text {
+                font-size: 16px;
+                line-height: 1.4em;
+                letter-spacing: .4px;
+                margin: 20px 0 0;
+            }
+
+            .news-read-more {
+                margin-top: 20px;
+
+                a {
+                    color: $text-color;
+                    font-size: 18px;
+                    text-decoration: none;
+                    border-bottom: 2px solid $text-color;
+                }
+            }
+        }
+
+        .news-item {
+            margin: 30px 0 0;
+            padding: 0 25px;
+
+            .news-from-by {
+                font-family: $font-family-3;
+                font-weight: 500;
+                margin: 20px 0;
+            }
+
+            .news-heading {
+                font-family: $font-family-1;
+                font-size: 24px;
+                line-height: 1.4;
+            }
+
+            .news-read-more {
+                margin-top: 20px;
+
+                a {
+                    color: $text-color;
+                    font-size: 18px;
+                    text-decoration: none;
+                    border-bottom: 2px solid $text-color;
+                }
+            }
+        }
+    }
+}
+
+// News section starts //
+
+// Brands section starts //
+.brands {
+    padding: 55px 0;
+    border-bottom: 1px solid lightgray;
+
+    .brands-title {
+
+        .title {
+            font-family: $font-family-2;
+            font-size: 24px;
+        }
+
+        .subtitle {
+            margin: 10px 0 30px;
+            line-height: 1.3em;
+            font-size: 30px;
+            font-family: $font-family-1;
+        }
+    }
+}
+
+// Brands section ends //
+
+// FollowUs section starts //
+.follow-us {
+    margin: 55px 0;
+
+    .follow-us-title {
+
+        .title {
+            font-family: $font-family-2;
+            font-size: 24px;
+        }
+
+        .subtitle {
+            margin: 10px 0 30px;
+            line-height: 1.3em;
+            font-size: 30px;
+            font-family: $font-family-1;
+        }
+    }
+
+    .follow-us-btn {
+
+        button.followBtn {
+            background-color: $text-color;
+            color: white;
+            width: 75%;
+            padding: 15px 0;
+            border: none;
+            margin-top: 25px;
+        }
+    }
+}
+
+// FollowUs section ends //

@@ -1,24 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sapone-theme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
-<body>
-    
-    <!-- HEADER BEGINS -->
-    
-    <div class="container">
-        
-    </div>
-    
-    <!-- HEADER ENDS -->    
 
-    <script src="vendors/js/bootstrap.bundle.min.js"></script>
+<body>
+
+    <!-- HEADER BEGINS -->
+    <div class="container">
+        <div class="header row h-100 align-items-center justify-content-center">
+            <div class="col-5 col-md-8 col-xl-2 header-left text-center text-sm-start">
+                <a href="#"><img src="images/logo.webp" alt="Sapone Theme Logo"></a>
+            </div>
+            <div class="col-2 col-xl-8 header-center text-center">
+                <button class="menu-btn d-xl-none">
+                    <i onclick="openMenu()" class="fa-solid fa-bars"></i> <span class="d-none d-md-inline">MENU</span>
+                </button>
+                <div class="mobile-menu-item-shop">
+                    <li class="d-flex align-items-center justify-content-between"><i onclick="closeShop()"
+                            class="fa-solid fa-angle-left"></i><i onclick="closeMenu()" class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li class="list-unstyled bg-secondary bg-opacity-25"><a href="#">Shop</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Ayurvedic soap</a></li>
+                        <li><a href="#">Coconut soap</a></li>
+                        <li><a href="#">Neem soap</a></li>
+                        <li><a href="#">Sandal soap</a></li>
+                        <li><a href="#">Basii soap</a></li>
+                        <li><a href="#">Medicine soap</a></li>
+                        <li><a href="#">Latherbea</a></li>
+                        <li><a href="#">Soapable</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Herbal soap</a></li>
+                        <li><a href="#">Vita soap</a></li>
+                        <li><a href="#">Green Touch</a></li>
+                        <li><a href="#">pure bliss</a></li>
+                        <li><a href="#">naturalis soap co.</a></li>
+                        <li><a href="#">skin paradise</a></li>
+                        <li><a href="#">cocosoap</a></li>
+                        <li><a href="#">soapanic</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><a href="#">essential soap</a></li>
+                        <li><a href="#">Golden glow</a></li>
+                        <li><a href="#">soft touch</a></li>
+                        <li><a href="#">golden kiss</a></li>
+                        <li><a href="#">soapure</a></li>
+                        <li><a href="#">ecosoap</a></li>
+                        <li><a href="#">vitapure</a></li>
+                        <li><a href="#">palmovita</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><a href="#">natural soap</a></li>
+                        <li><a href="#">eden bliss</a></li>
+                        <li><a href="#">handmade beauty</a></li>
+                        <li><a href="#">coco scent</a></li>
+                        <li><a href="#">organicare</a></li>
+                        <li><a href="#">derma clean</a></li>
+                        <li><a href="#">earth scent</a></li>
+                        <li><a href="#">cleangenics</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-item-pages">
+                    <li class="d-flex align-items-center justify-content-between"><i onclick="closePages()"
+                            class="fa-solid fa-angle-left"></i><i onclick="closeMenu()" class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li class="list-unstyled bg-secondary bg-opacity-25"><a href="#">Pages</a></li>
+                    <ul class="list-unstyled">
+                        <li class="border-0 m-0 p-0"></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Faq</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu">
+                    <ul class="list-unstyled">
+                        <li><i onclick="closeMenu()" class="fa-solid fa-xmark"></i></li>
+                        <li><a href="#">Home</a></li>
+                        <li onclick="openShop()" class="d-flex align-items-center justify-content-between"><a
+                                href="#">Shop</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li onclick="openPages()" class="d-flex align-items-center justify-content-between"><a
+                                href="#">Pages</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <ul class="d-none d-xl-block menu-list list-unstyled m-0">
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown-shop">
+                        <button class="dropShopBtn"><a href="#">Shop</a> <i
+                                class="fa-solid fa-chevron-down"></i></button>
+                        <div class="shop-content">
+                            <div class="desktop-shop d-flex align-items-center justify-content-around">
+                                <div class="col-3 px-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Ayurvedic soap</a></li>
+                                        <li><a href="#">Coconut soap</a></li>
+                                        <li><a href="#">Neem soap</a></li>
+                                        <li><a href="#">Sandal soap</a></li>
+                                        <li><a href="#">Basii soap</a></li>
+                                        <li><a href="#">Medicine soap</a></li>
+                                        <li><a href="#">Latherbea</a></li>
+                                        <li><a href="#">Soapable</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Herbal soap</a></li>
+                                        <li><a href="#">Vita soap</a></li>
+                                        <li><a href="#">Green Touch</a></li>
+                                        <li><a href="#">pure bliss</a></li>
+                                        <li><a href="#">naturalis soap co.</a></li>
+                                        <li><a href="#">skin paradise</a></li>
+                                        <li><a href="#">cocosoap</a></li>
+                                        <li><a href="#">soapanic</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Essential soap</a></li>
+                                        <li><a href="#">Golden glow</a></li>
+                                        <li><a href="#">soft touch</a></li>
+                                        <li><a href="#">golden kiss</a></li>
+                                        <li><a href="#">soapure</a></li>
+                                        <li><a href="#">ecosoap</a></li>
+                                        <li><a href="#">vitapure</a></li>
+                                        <li><a href="#">palmovita</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Natural soap</a></li>
+                                        <li><a href="#">eden bliss</a></li>
+                                        <li><a href="#">handmade beauty</a></li>
+                                        <li><a href="#">coco scent</a></li>
+                                        <li><a href="#">organicare</a></li>
+                                        <li><a href="#">derma clean</a></li>
+                                        <li><a href="#">earth scent</a></li>
+                                        <li><a href="#">cleangenics</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-pages">
+                        <button class="dropPagesBtn"><a href="#">Pages <i
+                                    class="fa-solid fa-chevron-down"></i></a></button>
+                        <div class="pages-content">
+                            <ul class="list-unstyled">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Faq</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="row col-5 col-md-2 header-right">
+                <div class="col-sm-6 d-md-none"></div>
+                <div class="col-6 col-sm-3 col-md-6 text-center">
+                    <button class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="col-6 col-sm-3 col-md-6">
+                    <button class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER ENDS -->
+
+    <!-- HOME SLIDER BEGINS -->
+    <div class="slider-container">
+        <div class="slide">
+            <div class="slide-content mx-md-auto">
+                <h2>Cheris Your New Feel With Gentle Soap</h2>
+                <p>Faucibus interdum posuere lorem gures.</p>
+            </div>
+            <img class="d-md-none" src="images/home-slide-2.webp" alt="">
+            <img class="d-none d-md-block" src="images/hom-slide-4.webp" alt="">
+        </div>
+    </div>
+    <!-- HOME SLIDER ENDS -->
+
+    <!-- FRESHNESS SECTION BEGINS -->
+    <div class="container">
+        <section class="freshness">
+            <div class="freshness-content text-center">
+                <div class="content-title">100% Freshness</div>
+                <div class="content-subtitle">
+                    Skin Brightening Organic Soap
+                </div>
+                <div class="content-description">
+                    Ultricies mi eget mauris pharetra et ultrices neque. Risus nec feugiat in fermentum posuere urna.
+                    Parturient montes nascetur ridiculus mus. Auctor urna nunc id cursus metus aliquam eleifend mi.Nisl
+                    nisi
+                    scelerisque eu ultrices vitae auctor eu augue. Eu mi bibendum nequeeges.
+                </div>
+            </div>
+
+            <div class="freshness-images row text-center">
+                <div class="col-12 col-md-6 col-lg-4 p-0 freshness-image">
+                    <img class="main-image" src="images/freshness-image-1.webp" alt="1">
+                    <div
+                        class="freshness-image-hover mx-auto d-flex flex-column align-items-center justify-content-center">
+                        <div class="freshness-image-hover-subtitle">
+                            - Since 1987 -
+                        </div>
+                        <div class="freshness-image-hover-title">
+                            New Feel
+                        </div>
+                        <div class="freshness-image-hover-description">
+                            Beauty soap
+                        </div>
+                        <img class="freshness-image-hover-image" src="images/freshness-hover-image-1.png" alt="hover-1">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 p-0 freshness-image">
+                    <img class="main-image" src="images/freshness-image-2.webp" alt="1">
+                    <div
+                        class="freshness-image-hover mx-auto d-flex flex-column align-items-center justify-content-center">
+                        <div class="freshness-image-hover-subtitle">
+                            - Since 1962 -
+                        </div>
+                        <div class="freshness-image-hover-title">
+                            Feel Exquisite
+                        </div>
+                        <div class="freshness-image-hover-description">
+                            Novelty Soap
+                        </div>
+                        <img class="freshness-image-hover-image" src="images/freshness-hover-image-1.png" alt="hover-1">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mx-auto p-0 freshness-image">
+                    <img class="main-image" src="images/freshness-image-3.webp" alt="1">
+                    <div
+                        class="freshness-image-hover mx-auto d-flex flex-column align-items-center justify-content-center">
+                        <div class="freshness-image-hover-subtitle">
+                            - Since 1969 -
+                        </div>
+                        <div class="freshness-image-hover-title">
+                            Feel Fresh
+                        </div>
+                        <div class="freshness-image-hover-description">
+                            Liquid Soap
+                        </div>
+                        <img class="freshness-image-hover-image" src="images/freshness-hover-image-1.png" alt="hover-1">
+                    </div>
+                </div>
+                <!-- <div class="col-12 p-0"><img src="images/freshness-image-2.webp" alt="2"></div>
+                <div class="col-12 p-0"><img src="images/freshness-image-3.webp" alt="3"></div> -->
+            </div>
+        </section>
+    </div>
+    <!-- FRESHNESS SECTION ENDS -->
+
+    <!-- NATURAL SECTION BEGINS -->
+    <section class="natural">
+        <div class="container">
+            <div class="natural-content text-center">
+                <div class="content-title">100% Natural</div>
+                <div class="content-subtitle">Best Products</div>
+            </div>
+            <div class="natural-cards row">
+                <div class="col-12 col-md-6 col-xl-4 card text-center">
+                    <div class="card-img">
+                        <img class="w-100" src="images/natural-1.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="content-subtitle">Youthful</div>
+                        <div class="content-title">Handmade Soap</div>
+                        <div class="content-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="content-price">Rs. <span>350.00</span></div>
+                        <div class="content-btn">
+                            <button class="addBtn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-6 col-xl-4 card text-center">
+                    <div class="card-img">
+                        <img class="w-100" src="images/natural-1.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="content-subtitle">Hera</div>
+                        <div class="content-title">SandalWood Bar</div>
+                        <div class="content-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="content-price">Rs. <span>160.00</span></div>
+                        <div class="content-btn">
+                            <button class="addBtn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-xl-block col-xl-4 card text-center">
+                    <div class="card-img">
+                        <img class="w-100" src="images/natural-1.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="content-subtitle">Fit</div>
+                        <div class="content-title">Neem Soap</div>
+                        <div class="content-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="content-price">Rs. <span>210.00</span></div>
+                        <div class="content-btn">
+                            <button class="addBtn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NATURAL SECTION ENDS -->
+
+    <!-- BENEFIT SECTION BEGINS -->
+    <div class="container">
+        <section class="benefit">
+            <div class="benefit-content text-center">
+                <div class="content-title">Best Way to Choose</div>
+                <div class="content-subtitle">The Benefits Of Our Outcomes</div>
+            </div>
+            <div class="outcomes row">
+                <div class="outcome text-center col-12 col-sm-6 col-lg-4">
+                    <div class="outcome-img">
+                        <img src="images/benefit-1.webp" alt="benefit">
+                    </div>
+                    <div class="outcome-content">
+                        <div class="content-title">100% Vegan & Paraben Free</div>
+                        <div class="content-description">Augue neque gravida marwuese se in fermentum et sollicitudin ac
+                            orci phasellus. Dignissim sodales et eu sem integer vitae justoeres</div>
+                    </div>
+                </div>
+
+                <div class="outcome text-center col-12 col-sm-6 col-lg-4">
+                    <div class="outcome-img">
+                        <img src="images/benefit-2.webp" alt="benefit">
+                    </div>
+                    <div class="outcome-content">
+                        <div class="content-title">Cold Processed Soap</div>
+                        <div class="content-description">Felis eget velit ulereuyres tese aliquet sagittis. Et netus et
+                            malesuada fames ac turpis egestas. Suscipit tellus pauris maecenasres
+                        </div>
+                    </div>
+                </div>
+
+                <div class="outcome text-center col-12 col-sm-6 col-lg-4 px-sm-1 mx-auto">
+                    <div class="outcome-img">
+                        <img src="images/benefit-3.webp" alt="benefit">
+                    </div>
+                    <div class="outcome-content">
+                        <div class="content-title">High & Royal Quality</div>
+                        <div class="content-description">Cras adipiscing enim e sers rhurese seturpis egestas pretium
+                            aenean pharetra magna. elis eget velit aliquet sagittis id consectetur</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- BENEFIT SECTION ENDS -->
+
+    <!-- ABOUT US SECTION STARTS -->
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us-title text-center">
+                <div class="title">About Us</div>
+                <div class="subtitle">Finest Medicated Soap</div>
+            </div>
+            <div class="about-us-content">
+                <div class="content-description row">
+                    <div class="col-12 col-lg-6 col-xl-4">
+                        <div class="content-title">New Organic Magic Soap</div>
+                        <p>
+                            Enim blandit volutpat maecenas volutpat blandit aliquam. In iaculis nunc sed augue lacus
+                            viverra vitae. Donec adipiscing tristique risus nec feugiat in fermentum posuere. Egestas
+                            sed sed risus pretium quam vulputate dignissim fringilla phasellus.
+                        </p>
+                        <img class="p-3 p-lg-0" src="images/about-us-1.webp" alt="1">
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-4">
+                        <img class="center p-lg-5" src="images/about-us-2.webp" alt="2">
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <img class="right-img pt-lg-5 d-block mx-lg-auto m-xl-0 p-xl-0" src="images/about-us-3.webp"
+                            alt="3">
+                        <p>
+                            Ultricies integer quis auctor elit sed vulputate mi. Laoreet id donec ultrices tincidunt
+                            arcu non. Ut venenatis tellus in metus vulputate. Ullamcorper malesuada proin libero nunc
+                            consequat interdum varius. Nunc congue nisi vitae suscipit.
+                        </p>
+                        <img class="spike" src="images/about-us-4.webp" alt="4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT US SECTION ENDS -->
+
+    <!-- CLIENT EXPERIENCE SECTION STARTS -->
+    <div class="container">
+        <div class="client-experience">
+            <div class="client-title text-center">
+                <div class="title">Client Experience</div>
+                <div class="subtitle">Our Testimonials</div>
+            </div>
+            <div class="clients">
+                <div class="client text-center">
+                    <div class="row align-items-center ">
+                        <div class="client-img col-12 col-sm-6">
+                            <img src="images/client-1.webp" alt="client image">
+                        </div>
+                        <div class="client-info col-12 col-sm-6">
+                            <div class="client-name">Harper Boldren</div>
+                            <div class="client-country">Russia</div>
+                        </div>
+                    </div>
+                    <div class="client-comment">
+                        Laoreet id donec ultrices tincidunt arcu non sodales neque.Habitant morbi tristique senectus et
+                        netus. Nec nam aliquam sem et tortor. Commodo nulla facilisi vehicula a arcu cursus.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CLIENT EXPERIENCE SECTION ENDS -->
+
+    <!-- NEWS SECTION STARTS -->
+    <section class="news">
+        <div class="container">
+            <div class="news-title text-center">
+                <div class="title">Our News</div>
+                <div class="subtitle">Our New Article Updates</div>
+            </div>
+            <div class="news-content row flex-row-reverse align-items-center justify-content-center">
+                <div class="news-main row col-12 col-xl-8">
+                    <img class="col-12 col-md-6" src="images/news.webp" alt="news">
+                    <div class="col-12 col-md-6">
+                        <div class="news-from-by">
+                            By Ram M / March 15, 2002
+                        </div>
+                        <div class="news-heading">
+                            The Finest Selection Of Soaps In New Factory
+                        </div>
+                        <div class="news-text">
+                            Cames cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat...
+                        </div>
+                        <div class="news-read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 p-0">
+                    <div class="news-item col-12">
+                        <div class="news-from-by">
+                            By Ram M / March 15, 2022
+                        </div>
+                        <div class="news-heading">
+                            New Feel Of Journey For Soap Brands
+                        </div>
+                        <div class="news-read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-item col-12">
+                        <div class="news-from-by">
+                            By Ram M / March 15, 2022
+                        </div>
+                        <div class="news-heading">
+                            What Was The Original Material Used To Make Soap
+                        </div>
+                        <div class="news-read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEWS SECTION ENDS -->
+
+    <!-- BRANDS SECTION STARTS -->
+    <div class="container">
+        <section class="brands">
+            <div class="brands-title text-center">
+                <div class="title">About Us</div>
+                <div class="subtitle">Natural Cosmetic Brand</div>
+            </div>
+            <div class="brands-list row">
+                <div class="col-12 col-md-4 col-xl-3 brand text-center">
+                    <img src="images/brand-icon-1.webp" alt="brand">
+                </div>
+                <div class="d-none d-md-inline-block col-md-4 col-xl-3 brand text-center">
+                    <img src="images/brand-icon-2.webp" alt="brand">
+                </div>
+                <div class="d-none d-md-inline-block col-md-4 col-xl-3 brand text-center">
+                    <img src="images/brand-icon-3.webp" alt="brand">
+                </div>
+                <div class="d-none d-xl-inline-block col-xl-3 brand text-center">
+                    <img src="images/brand-icon-3.webp" alt="brand">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- BRANDS SECTION ENDS -->
+
+    <!-- FOLLOWUS SECTION STARTS -->
+    <section class="follow-us">
+        <div class="follow-us-title text-center">
+            <div class="title">Follow Us on Instagram</div>
+            <div class="subtitle">Have A Look On Our Creations</div>
+        </div>
+        <div class="follow-us-galery row align-items-center justify-content-center m-0 p-0">
+            <div class="galery-item col-12 col-sm-6 m-0 p-0">
+                <img class="w-100" src="images/about-us-3.webp" alt="">
+            </div>
+            <div class="galery-item col-12 col-sm-6 m-0 p-0">
+                <img class="w-100" src="images/about-us-3.webp" alt="">
+            </div>
+            <div class="galery-item col-12 col-sm-6 m-0 p-0">
+                <img class="w-100" src="images/about-us-3.webp" alt="">
+            </div>
+            <div class="galery-item col-12 col-sm-6 m-0 p-0">
+                <img class="w-100" src="images/about-us-3.webp" alt="">
+            </div>
+            <div class="galery-item col-12 col-sm-6 mx-sm-auto m-0 p-0">
+                <img class="w-100" src="images/about-us-3.webp" alt="">
+            </div>
+        </div>
+        <div class="follow-us-btn text-center">
+            <button class="followBtn">#followsoap</button>
+        </div>
+    </section>
+    <!-- FOLLOWUS SECTION ENDS -->
+
+    <!-- FOOTER STARTS -->
+    <footer>
+        <div class="footer-logo text-center">
+            <img src="images/logo.webp" alt="logo">
+        </div>
+        <ul class="footer-links list-unstyled text-center">
+            <li><a href="#">WHOLESALE</a></li>
+            <li><a href="#">BUYERSHIPPING AND PAYMENT</a></li>
+            <li><a href="#">WARRANTY AND RETURN</a></li>
+            <li><a href="#">AGREEMENTS</a></li>
+        </ul>
+        <div class="footer-copyright text-center">
+            <p>© 2022 Sapone-theme Design Themes</p>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+    <script src="vendors/js/bootstrap.bundle.js"></script>
     <script src="dist/js/main.js"></script>
 </body>
+
 </html>

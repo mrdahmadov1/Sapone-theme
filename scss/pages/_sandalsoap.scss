@@ -1,0 +1,314 @@
+/* Product section starts */
+.product {
+
+
+    .product-title {
+        background-color: $bg-natural;
+        padding: 50px 0;
+        font-weight: 700;
+        color: $text-color;
+
+        .title {
+
+            h1 {
+                font-family: $font-family-1;
+                font-size: 24px;
+                line-height: 2;
+            }
+        }
+
+        .sub-title {
+
+            h6 {
+                font-family: $font-family-3;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .product-content {
+        margin: 60px 0;
+        color: $text-color;
+
+        .content-title {
+            margin: 30px 0;
+
+            .title {
+
+                h3 {
+                    font-family: $font-family-1;
+                    font-size: 28px;
+                }
+            }
+
+            .sub-title {
+
+                p {
+                    font-family: $font-family-3;
+                    font-size: 12px;
+
+                    i {
+                        color: red;
+                    }
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+        }
+
+        .content-info {
+
+            .product-price {
+
+                p {
+
+                    margin: 0;
+
+                    &.price {
+                        margin: 0;
+                        font-family: $font-family-3;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .product-feature {
+
+                p {
+                    margin: 0;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        display: inline;
+                        padding: 2.5px 5px;
+                        border: 1px solid $main-color;
+                    }
+                }
+            }
+
+            .product-detail {
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .row {
+                margin-bottom: 25px;
+            }
+        }
+
+        .content-buttons {
+
+            button {
+                display: block;
+                padding: 10px 30px;
+                border: 1px solid $main-color;
+                color: $main-color;
+                background-color: transparent;
+                margin: 15px 10px 0 0;
+                font-size: 18px;
+                transition: all .75s ease;
+
+                &:hover {
+                    color: white;
+                    background-color: $main-color;
+                }
+            }
+        }
+
+        .content-viewer {
+
+            p {
+                font-size: 14px;
+                margin: 25px 0 50px;
+
+                i {
+                    font-size: 12px;
+                    color: $main-color;
+                }
+
+                span {
+                    font-weight: bold;
+                    color: $main-color;
+                }
+            }
+        }
+
+        .content-description {
+
+            .content-buttons {
+
+                button {
+                    margin: 5px 5px 0 0;
+
+                    &.active{
+                        background-color: $main-color;
+                        color: white;
+                    }
+                }
+            }
+
+            .description {
+                border: 1px solid lightgrey;
+                padding: 30px;
+                margin: 30px 0;
+                font-family: $font-family-3;
+                font-size: 14px;
+
+                h6 {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .about-more {
+
+            a {
+                font-size: 24px;
+                font-family: $font-family-1;
+                color: $text-color;
+                text-decoration: underline !important;
+
+                i {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .sidebar{
+        margin: 60px 0;
+        padding-right: 30px;
+        color: $text-color;
+        // background-color: grey;
+        // border: 1px solid black;
+
+        ul{
+
+            li{
+                padding-bottom: 15px;
+
+                &:nth-child(1){
+                    margin-bottom: 20px;
+                    font-family: $font-family-1;
+                    font-size: 24px;
+                    border-bottom: 1px solid black;
+                }
+
+                a{
+                    color: $text-color;
+                    font-family: $font-family-3;
+                    font-size: 14px;
+                }
+            }
+
+            &.arrivals{
+
+                .arrival-content{
+
+                    .arrival-title{
+
+                        h2{
+                            margin-top: 15px;
+                            font-family: $font-family-1;
+                        }
+                    }
+
+                    .stars{
+                        margin: 20px 0;
+
+                        i{
+                            color: $text-color;
+                        }
+                    }
+
+                    .arrival-price{
+
+                        p{
+                            font-family: $font-family-1;
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            &.best-sellers{
+
+                li{
+
+                    .card {
+                        border: none;
+                        background-color: transparent;
+            
+                        .card-content {
+            
+                            .content-subtitle {
+                                font-family: $font-family-3;
+                                font-weight: 500;
+                                font-size: 14px;
+                                margin-top: 15px;
+                            }
+            
+                            .content-title {
+                                font-family: $font-family-1;
+                                font-size: 30px;
+                            }
+            
+                            .content-stars {
+                                color: $text-color;
+                                font-size: 14px;
+                                margin-top: 10px;
+                            }
+            
+                            .content-price {
+                                font-family: $font-family-1;
+                                font-size: 22px;
+                                font-weight: 600;
+                                margin: 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Product section ends */
+
+/* Product section starts */
+.natural.sandal{
+    background-color: white;
+    padding-top: 0;
+
+    .product-title{
+
+        .title{
+
+            h1{
+                font-family: $font-family-1;
+                font-size: 28px;
+                margin: 40px 0;
+            }
+        }
+    }
+
+    .natural-cards{
+
+        .card{
+            margin-bottom: 65px;
+        }
+    }
+}
+/* Product section ends */

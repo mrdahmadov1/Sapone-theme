@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,300&family=Montserrat:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
 a {
@@ -189,6 +189,7 @@ body {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .header .header-center .menu-list .dropdown-shop .shop-content .desktop-shop ul li a {
@@ -197,6 +198,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .header .header-center .menu-list .dropdown-shop:hover .shop-content {
@@ -243,6 +245,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   color: #161619;
+  cursor: pointer;
 }
 
 .header .header-center .menu-list .dropdown-pages:hover .pages-content {
@@ -662,6 +665,241 @@ footer .footer-copyright p {
   margin-top: 25px;
 }
 
+/* Product section starts */
+.product .product-title {
+  background-color: #f3ece2;
+  padding: 50px 0;
+  font-weight: 700;
+  color: #161619;
+}
+
+.product .product-title .title h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  line-height: 2;
+}
+
+.product .product-title .sub-title h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.product .product-content {
+  margin: 60px 0;
+  color: #161619;
+}
+
+.product .product-content .content-title {
+  margin: 30px 0;
+}
+
+.product .product-content .content-title .title h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+}
+
+.product .product-content .content-title .sub-title p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.product .product-content .content-title .sub-title p i {
+  color: red;
+}
+
+.product .product-content .content-title .sub-title p span {
+  font-weight: bold;
+}
+
+.product .product-content .content-info .product-price p {
+  margin: 0;
+}
+
+.product .product-content .content-info .product-price p.price {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product .product-content .content-info .product-feature p {
+  margin: 0;
+}
+
+.product .product-content .content-info .product-feature ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product .product-content .content-info .product-feature ul li {
+  display: inline;
+  padding: 2.5px 5px;
+  border: 1px solid #5e6e5f;
+}
+
+.product .product-content .content-info .product-detail p {
+  margin: 0;
+}
+
+.product .product-content .content-info .row {
+  margin-bottom: 25px;
+}
+
+.product .product-content .content-buttons button {
+  display: block;
+  padding: 10px 30px;
+  border: 1px solid #5e6e5f;
+  color: #5e6e5f;
+  background-color: transparent;
+  margin: 15px 10px 0 0;
+  font-size: 18px;
+  -webkit-transition: all .75s ease;
+  transition: all .75s ease;
+}
+
+.product .product-content .content-buttons button:hover {
+  color: white;
+  background-color: #5e6e5f;
+}
+
+.product .product-content .content-viewer p {
+  font-size: 14px;
+  margin: 25px 0 50px;
+}
+
+.product .product-content .content-viewer p i {
+  font-size: 12px;
+  color: #5e6e5f;
+}
+
+.product .product-content .content-viewer p span {
+  font-weight: bold;
+  color: #5e6e5f;
+}
+
+.product .product-content .content-description .content-buttons button {
+  margin: 5px 5px 0 0;
+}
+
+.product .product-content .content-description .content-buttons button.active {
+  background-color: #5e6e5f;
+  color: white;
+}
+
+.product .product-content .content-description .description {
+  border: 1px solid lightgrey;
+  padding: 30px;
+  margin: 30px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.product .product-content .content-description .description h6 {
+  font-weight: 700;
+}
+
+.product .product-content .about-more a {
+  font-size: 24px;
+  font-family: "Cormorant Garamond", serif;
+  color: #161619;
+  text-decoration: underline !important;
+}
+
+.product .product-content .about-more a i {
+  font-size: 18px;
+}
+
+.product .sidebar {
+  margin: 60px 0;
+  padding-right: 30px;
+  color: #161619;
+}
+
+.product .sidebar ul li {
+  padding-bottom: 15px;
+}
+
+.product .sidebar ul li:nth-child(1) {
+  margin-bottom: 20px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  border-bottom: 1px solid black;
+}
+
+.product .sidebar ul li a {
+  color: #161619;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.product .sidebar ul.arrivals .arrival-content .arrival-title h2 {
+  margin-top: 15px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.product .sidebar ul.arrivals .arrival-content .stars {
+  margin: 20px 0;
+}
+
+.product .sidebar ul.arrivals .arrival-content .stars i {
+  color: #161619;
+}
+
+.product .sidebar ul.arrivals .arrival-content .arrival-price p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.product .sidebar ul.best-sellers li .card {
+  border: none;
+  background-color: transparent;
+}
+
+.product .sidebar ul.best-sellers li .card .card-content .content-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.product .sidebar ul.best-sellers li .card .card-content .content-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+}
+
+.product .sidebar ul.best-sellers li .card .card-content .content-stars {
+  color: #161619;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.product .sidebar ul.best-sellers li .card .card-content .content-price {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* Product section ends */
+/* Product section starts */
+.natural.sandal {
+  background-color: white;
+  padding-top: 0;
+}
+
+.natural.sandal .product-title .title h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  margin: 40px 0;
+}
+
+.natural.sandal .natural-cards .card {
+  margin-bottom: 65px;
+}
+
+/* Product section ends */
 @media (max-width: 576px) {
   /*??? niye sagda bolsuq qalir ???*/
 }

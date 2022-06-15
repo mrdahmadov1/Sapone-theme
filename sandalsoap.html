@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandal Soap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+
+    <!-- HEADER BEGINS -->
+    <div class="container">
+        <div class="header row h-100 align-items-center justify-content-center">
+            <div class="col-5 col-md-8 col-xl-2 header-left text-center text-sm-start">
+                <a href="#"><img src="images/logo.webp" alt="Sapone Theme Logo"></a>
+            </div>
+            <div class="col-2 col-xl-8 header-center text-center">
+                <button class="menu-btn d-xl-none">
+                    <i onclick="openMenu()" class="fa-solid fa-bars"></i> <span class="d-none d-md-inline">MENU</span>
+                </button>
+                <div class="mobile-menu-item-shop">
+                    <li class="d-flex align-items-center justify-content-between"><i onclick="closeShop()"
+                            class="fa-solid fa-angle-left"></i><i onclick="closeMenu()" class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li class="list-unstyled bg-secondary bg-opacity-25"><a href="#">Shop</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Ayurvedic soap</a></li>
+                        <li><a href="#">Coconut soap</a></li>
+                        <li><a href="#">Neem soap</a></li>
+                        <li><a href="sandalsoap.html">Sandal soap</a></li>
+                        <li><a href="#">Basii soap</a></li>
+                        <li><a href="#">Medicine soap</a></li>
+                        <li><a href="#">Latherbea</a></li>
+                        <li><a href="#">Soapable</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Herbal soap</a></li>
+                        <li><a href="#">Vita soap</a></li>
+                        <li><a href="#">Green Touch</a></li>
+                        <li><a href="#">pure bliss</a></li>
+                        <li><a href="#">naturalis soap co.</a></li>
+                        <li><a href="#">skin paradise</a></li>
+                        <li><a href="#">cocosoap</a></li>
+                        <li><a href="#">soapanic</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><a href="#">essential soap</a></li>
+                        <li><a href="#">Golden glow</a></li>
+                        <li><a href="#">soft touch</a></li>
+                        <li><a href="#">golden kiss</a></li>
+                        <li><a href="#">soapure</a></li>
+                        <li><a href="#">ecosoap</a></li>
+                        <li><a href="#">vitapure</a></li>
+                        <li><a href="#">palmovita</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><a href="#">natural soap</a></li>
+                        <li><a href="#">eden bliss</a></li>
+                        <li><a href="#">handmade beauty</a></li>
+                        <li><a href="#">coco scent</a></li>
+                        <li><a href="#">organicare</a></li>
+                        <li><a href="#">derma clean</a></li>
+                        <li><a href="#">earth scent</a></li>
+                        <li><a href="#">cleangenics</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-item-pages">
+                    <li class="d-flex align-items-center justify-content-between"><i onclick="closePages()"
+                            class="fa-solid fa-angle-left"></i><i onclick="closeMenu()" class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li class="list-unstyled bg-secondary bg-opacity-25"><a href="#">Pages</a></li>
+                    <ul class="list-unstyled">
+                        <li class="border-0 m-0 p-0"></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Faq</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu">
+                    <ul class="list-unstyled">
+                        <li><i onclick="closeMenu()" class="fa-solid fa-xmark"></i></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li onclick="openShop()" class="d-flex align-items-center justify-content-between"><a
+                                href="#">Shop</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li onclick="openPages()" class="d-flex align-items-center justify-content-between"><a
+                                href="#">Pages</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <ul class="d-none d-xl-block menu-list list-unstyled m-0">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown-shop">
+                        <button class="dropShopBtn"><a href="#">Shop</a> <i
+                                class="fa-solid fa-chevron-down"></i></button>
+                        <div class="shop-content">
+                            <div class="desktop-shop d-flex align-items-center justify-content-around">
+                                <div class="col-3 px-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Ayurvedic soap</a></li>
+                                        <li><a href="#">Coconut soap</a></li>
+                                        <li><a href="#">Neem soap</a></li>
+                                        <li><a href="sandalsoap.html">Sandal soap</a></li>
+                                        <li><a href="#">Basii soap</a></li>
+                                        <li><a href="#">Medicine soap</a></li>
+                                        <li><a href="#">Latherbea</a></li>
+                                        <li><a href="#">Soapable</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Herbal soap</a></li>
+                                        <li><a href="#">Vita soap</a></li>
+                                        <li><a href="#">Green Touch</a></li>
+                                        <li><a href="#">pure bliss</a></li>
+                                        <li><a href="#">naturalis soap co.</a></li>
+                                        <li><a href="#">skin paradise</a></li>
+                                        <li><a href="#">cocosoap</a></li>
+                                        <li><a href="#">soapanic</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Essential soap</a></li>
+                                        <li><a href="#">Golden glow</a></li>
+                                        <li><a href="#">soft touch</a></li>
+                                        <li><a href="#">golden kiss</a></li>
+                                        <li><a href="#">soapure</a></li>
+                                        <li><a href="#">ecosoap</a></li>
+                                        <li><a href="#">vitapure</a></li>
+                                        <li><a href="#">palmovita</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Natural soap</a></li>
+                                        <li><a href="#">eden bliss</a></li>
+                                        <li><a href="#">handmade beauty</a></li>
+                                        <li><a href="#">coco scent</a></li>
+                                        <li><a href="#">organicare</a></li>
+                                        <li><a href="#">derma clean</a></li>
+                                        <li><a href="#">earth scent</a></li>
+                                        <li><a href="#">cleangenics</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-pages">
+                        <button class="dropPagesBtn"><a href="#">Pages <i
+                                    class="fa-solid fa-chevron-down"></i></a></button>
+                        <div class="pages-content">
+                            <ul class="list-unstyled">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Faq</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="row col-5 col-md-2 header-right">
+                <div class="col-sm-6 d-md-none"></div>
+                <div class="col-6 col-sm-3 col-md-6 text-center">
+                    <button class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="col-6 col-sm-3 col-md-6">
+                    <button class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER ENDS -->
+
+    <!-- PRODUCT SECTION BEGINS -->
+    <section class="product">
+        <div class="product-title text-center">
+            <div class="title">
+                <h1>PRODUCT</h1>
+            </div>
+            <div class="sub-title">
+                <h6>All / Sandal Soap</h6>
+            </div>
+        </div>
+        <div class="container d-flex flex-row-reverse justify-content-between">
+            <div class="product-content col-12 col-md-7 col-lg-8 col-xl-9">
+                <div class="row justify-content-between">
+                    <div class="content-image col-12 col-xl-5">
+                        <img class="w-100" src="images/natural-1.webp" alt="">
+                    </div>
+                    <div class="col-12 col-xl-7">
+                        <div class="content-title mt-xl-0">
+                            <div class="title">
+                                <h3>Neem Soap</h3>
+                            </div>
+                            <div class="sub-title">
+                                <p><i class="fa-solid fa-fire"></i> Sold <span>83</span> Products in last
+                                    <span>19</span>
+                                    hours
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-info">
+                            <div class="product-price row align-items-center justify-content-between">
+                                <div class="col-4">
+                                    <p>Price:</p>
+                                </div>
+                                <div class="col-8">
+                                    <p class="price">Rs. 278.00</p>
+                                </div>
+                            </div>
+                            <div class="product-feature row">
+                                <div class="col-4">
+                                    <p>Skin Type:</p>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li>Dry</li>
+                                        <li>All Skin</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-feature row">
+                                <div class="col-4">
+                                    <p>Net Weight:</p>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li>100 Gram</li>
+                                        <li>125 Gram</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-feature row">
+                                <div class="col-4">
+                                    <p>Scent:</p>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li>Jasmine</li>
+                                        <li>Sandal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-detail row">
+                                <div class="col-4">
+                                    <p>Vendor:</p>
+                                </div>
+                                <div class="col-8">
+                                    <p>Fit</p>
+                                </div>
+                            </div>
+                            <div class="product-detail row">
+                                <div class="col-4">
+                                    <p>Type:</p>
+                                </div>
+                                <div class="col-8">
+                                    <p>Bath & Body</p>
+                                </div>
+                            </div>
+                            <div class="product-detail row">
+                                <div class="col-4">
+                                    <p>Availability:</p>
+                                </div>
+                                <div class="col-8">
+                                    <p>In stock!</p>
+                                </div>
+                            </div>
+                            <div class="product-count row">
+                                <div class="col-4">
+                                    <p>Quantity:</p>
+                                </div>
+                                <div class="col-8">
+                                    <p>counter...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-buttons d-flex flex-wrap">
+                            <button>Add to Cart</button>
+                            <button>Buy it now</button>
+                            <button>Add to wishlist</button>
+                        </div>
+                        <div class="content-viewer">
+                            <p><i class="fa-solid fa-eye"></i> <span>196</span> People are viewing this right now</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-description">
+                    <div class="content-buttons d-flex flex-wrap">
+                        <button class="active">Product Description</button>
+                        <button>Additional information</button>
+                        <button>Reviews</button>
+                    </div>
+                    <div class="description">
+                        <h6>Nam tempus turpis at metus</h6>
+                        <p>Scelerisque placerat nulla deumantos solicitud felis. Pellentesque
+                            diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper
+                            mattis drostique des commodo pharetras loremos.Donec pretium egestas sapien et mollis.</p>
+                        <h6>Lorem ipsum dolor sit amet</h6>
+                        <p>Sonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur.</p>
+                        <h6>Busey ipsum dolor sit amet</h6>
+                        <p>Tortor at auctor urna nunc id cursus metus aliquam. Odio tempor orci dapibus ultrices. Tortor
+                            condimentum lacinia quis vel eros donec ac odio. Velit euismod in pellentesque massa
+                            placerat duis ultricies lacus. Scelerisque purus semper eget duis at tellus at urna
+                            condimentum. Eu facilisis sed odio morbi quis commodo odio aenean urpis massa sed elemen.
+                        </p>
+                        <h6>Vestibulum sit amet ipsum</h6>
+                        <p>Praesent vestibulum congue tellus at fringilla. Curabitur vitae semper sem, eu convallis est.
+                            Cras felis nunc commodo eu convallis vitae interdum non nisl. Maecenas ac est sit amet augue
+                            pharetra convallis nec danos dui. Cras suscipit quam et turpis eleifend vitae malesuada
+                            magna congue. Damus id ullamcorper neque. Sed vitae mi a mi pretium aliquet ac sed elit.
+                            Pellentesque nulla eros accumsan quis justo at tincidunt lobortis denimes loremous.
+                            Suspendisse vestibulum lectus in lectus volutpat, ut dapibus purus pulvinar. Vestibulum sit
+                            amet auctor ipsum.</p>
+                    </div>
+                </div>
+                <div class="about-more text-center">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Enquiry about product?</a>
+                </div>
+            </div>
+            <div class="sidebar d-none d-md-block col-md-5 col-lg-4 col-xl-3">
+                <ul class="list-unstyled">
+                    <li>Category</li>
+                    <li class="d-flex justify-content-between align-items-center"><a href="#">Glycerin Soap</a> <i
+                            class="fa-solid fa-plus"></i></li>
+                    <li class="d-flex justify-content-between align-items-center"><a href="#">Castile Soap</a> <i
+                            class="fa-solid fa-plus"></i></li>
+                </ul>
+                <ul class="list-unstyled arrivals">
+                    <li>New Arrivals</li>
+                    <li><a class="row align-items-center justify-content-between" href="#">
+                            <img class="col-6" src="images/natural-1.webp" alt="">
+                            <div class="arrival-content col-6 p-0">
+                                <div class="arrival-title">
+                                    <h2>Organic Papaya Soap</h2>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="arrival-price">
+                                    <p>Rs. 116.00</p>
+                                </div>
+                            </div>
+                        </a></li>
+                    <li><a class="row align-items-center justify-content-between" href="#">
+                            <img class="col-6" src="images/natural-1.webp" alt="">
+                            <div class="arrival-content col-6 p-0">
+                                <div class="arrival-title">
+                                    <h2>Skin Lavender Soap</h2>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="arrival-price">
+                                    <p>Rs. 220.00</p>
+                                </div>
+                            </div>
+                        </a></li>
+                </ul>
+                <ul class="list-unstyled best-sellers">
+                    <li>Best Sellers</li>
+                    <li>
+                        <div class="card text-center">
+                            <div class="card-img">
+                                <img class="w-100" src="images/natural-1.webp" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="content-subtitle">Fit</div>
+                                <div class="content-title">Neem Soap</div>
+                                <div class="content-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="content-price">Rs. <span>210.00</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- PRODUCT SECTION ENDS -->
+
+    <!-- RECOMMENDED PRODUCT SECTION BEGINS -->
+    <section class="natural sandal">
+        <div class="product-title">
+            <div class="title text-center">
+                <h1>Recommended Products</h1>
+            </div>
+        </div>
+        <div class="natural-cards row p-5">
+            <div class="col-12 col-md-6 col-xl-3 card text-center">
+                <div class="card-img">
+                    <img class="w-100" src="images/natural-1.webp" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="content-subtitle">Youthful</div>
+                    <div class="content-title">Handmade Soap</div>
+                    <div class="content-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="content-price">Rs. <span>350.00</span></div>
+                    <div class="content-btn">
+                        <button class="addBtn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 card text-center">
+                <div class="card-img">
+                    <img class="w-100" src="images/natural-1.webp" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="content-subtitle">Hera</div>
+                    <div class="content-title">Sandalwood Bar</div>
+                    <div class="content-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="content-price">Rs. <span>160.00</span></div>
+                    <div class="content-btn">
+                        <button class="addBtn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 card text-center">
+                <div class="card-img">
+                    <img class="w-100" src="images/natural-1.webp" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="content-subtitle">Bay</div>
+                    <div class="content-title">Cool Aloe Vera Soap</div>
+                    <div class="content-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="content-price">Rs. <span>414.00</span></div>
+                    <div class="content-btn">
+                        <button class="addBtn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 card text-center">
+                <div class="card-img">
+                    <img class="w-100" src="images/natural-1.webp" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="content-subtitle">Coveted</div>
+                    <div class="content-title">Orange Carrot Soap</div>
+                    <div class="content-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="content-price">Rs. <span>380.00</span></div>
+                    <div class="content-btn">
+                        <button class="addBtn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RECOMMENDED PRODUCT SECTION ENDS -->
+
+
+
+
+    <!-- FOOTER STARTS -->
+    <footer>
+        <div class="footer-logo text-center">
+            <img src="images/logo.webp" alt="logo">
+        </div>
+        <ul class="footer-links list-unstyled text-center">
+            <li><a href="#">WHOLESALE</a></li>
+            <li><a href="#">BUYERSHIPPING AND PAYMENT</a></li>
+            <li><a href="#">WARRANTY AND RETURN</a></li>
+            <li><a href="#">AGREEMENTS</a></li>
+        </ul>
+        <div class="footer-copyright text-center">
+            <p>© 2022 Sapone-theme Design Themes</p>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+    <script src="vendors/js/bootstrap.bundle.js"></script>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>
